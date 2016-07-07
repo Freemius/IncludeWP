@@ -1,0 +1,78 @@
+.card {
+    &.small {
+        height: 320px;
+    }
+
+    .card-image {
+        .image-container
+        {
+            padding: 32% 0 0 0;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            margin: auto;
+        }
+
+        .card-title {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3px 5px;
+            margin: 10px;
+            border-radius: 6px;
+            font-weight: bold;
+
+            a {
+                color: #fff;
+                -webkit-font-smoothing: antialiased;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    .compatibility {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        i.fa {
+            background: rgba(255,255,255,0.8);
+            padding: 6px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            margin: 5px 5px 0 0;
+            font-size: 1.5em;
+            @include box-shadow(1px 1px 0px rgba(0,0,0,0.5));
+
+            &.plugin {
+                color: $fs-logo-blue-color;
+                border-color: $fs-logo-blue-color;
+            }
+            &.theme {
+                color: $fs-logo-magenta-color;
+                border-color: $fs-logo-magenta-color;
+            }
+        }
+    }
+
+    .github-details {
+        font-size: 1.2em;
+
+        i.fa {
+            display: block;
+        }
+    }
+
+    .card-action {
+        a {
+            font-size: 0.9em !important;
+            color: $fs-logo-blue-color !important;
+            text-transform: none !important;
+
+            i.fa {
+                font-size: 1.3em;
+//                vertical-align: middle;
+            }
+        }
+    }
+}

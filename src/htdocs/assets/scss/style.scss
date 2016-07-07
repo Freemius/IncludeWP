@@ -1,0 +1,47 @@
+@import "mixins";
+@import "colors";
+@import "nav";
+@import "cover";
+@import "filters";
+@import "card";
+@import "footer";
+
+body {
+    background: url('/assets/img/bkg-pattern.png') repeat;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #039be5;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+@media only screen and (max-width: 992px) {
+    .small-right {
+        float: right !important;
+        left: auto !important;
+        transform: initial !important;
+        -webkit-transform: initial !important;
+        padding: 0 !important;
+        right: 0.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    nav .brand-logo.medium-center {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+//right: 0.5rem;
+//padding: 0;
+
+.uppercase {
+    text-transform: uppercase;
+}

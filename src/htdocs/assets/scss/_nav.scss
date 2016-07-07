@@ -1,0 +1,68 @@
+#sharing {
+    a.twitter {
+        color: $twitter_color;
+    }
+    a.facebook {
+        color: $facebook_color;
+    }
+    a.google-plus {
+        color: $gplus_color;
+    }
+    a.whatsapp {
+        color: $whatsapp_color;
+    }
+    a.email {
+        color: $fs-logo-blue-color;
+    }
+
+    i.fa {
+        margin-left: 20px;
+    }
+}
+
+nav, .nav-wrapper {
+    background: #333;
+    @include box-shadow(none);
+    @include transition(0.5s all ease-in);
+}
+
+.navbar-fixed.bevel nav {
+    @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12));
+}
+
+#header {
+    @media only screen and (max-width: 600px) and (min-width: 360px) {
+        .nav-wrapper {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .nav-wrapper > ul {
+            > li > a > i.fa {
+                height: 56px;
+                line-height: 56px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 514px) {
+        .nav-wrapper .right li:last-child {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        .nav-wrapper .left li:first-child {
+            display: none;
+        }
+    }
+}
+
+//#header, nav {
+//    height: 150px;
+//
+//    h1 {
+//        margin: 6.1rem 0 2.68rem 0;
+//    }
+//}

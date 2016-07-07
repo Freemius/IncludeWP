@@ -1,0 +1,82 @@
+#filters {
+    .placeholder,
+    .section {
+        background: #222;
+    }
+
+    .section {
+        @include transition(0.5s all ease-in);
+        > .row {
+            margin-bottom: 0;
+        }
+    }
+
+    label {
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 1.3em;
+
+        i.fa {
+            margin-left: 10px;
+            @media only screen and (max-width: 400px) {
+                display: none;
+            }
+        }
+
+        &.plugin {
+            color: $fs-logo-blue-color;
+        }
+        &.theme {
+            color: $fs-logo-magenta-color;
+        }
+    }
+
+    [type="checkbox"].filled-in:not(:checked)+label:after,
+    [type="checkbox"].filled-in:checked+label:before,
+    [type="checkbox"].filled-in:checked+label:after
+    {
+        top: 2px;
+    }
+
+    .placeholder {
+        display: none;
+    }
+
+    &.sticky {
+        .section {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12));
+        }
+
+        .placeholder {
+            display: block;
+        }
+    }
+}
+
+#sortby_trigger {
+    i.fa {
+        margin-left: 10px;
+    }
+}
+
+#sortby {
+    min-width: 200px;
+
+    i.fa {
+        float: right;
+    }
+}
+
+.checkbox-blue[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid darken($fs-logo-blue-color, 10%);
+    background-color: $fs-logo-blue-color;
+}
+
+.checkbox-magenta[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid darken($fs-logo-magenta-color, 10%);
+    background-color: $fs-logo-magenta-color;
+}

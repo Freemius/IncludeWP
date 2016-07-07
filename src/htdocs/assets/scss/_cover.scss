@@ -1,0 +1,38 @@
+h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1.3em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#cover {
+    text-align: center;
+    color: #ddd;
+    background: #333;
+
+    .powered-by {
+        font-style: italic;
+
+        b {
+            color: #d3135a;
+            margin-right: 3px;
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    h1 {
+        font-size: 3.2rem;
+        margin: 1.1rem 0 0.68rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}

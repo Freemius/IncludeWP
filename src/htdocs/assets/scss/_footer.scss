@@ -1,0 +1,20 @@
+#footer {
+    background: #222;
+    color: #ccc;
+
+    .cta {
+        border-top: 1px solid #444;
+        padding-top: 2rem;
+        @include box-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
+
+        .bot {
+
+            max-width: 200px;
+        }
+    }
+
+    h3 {
+        font-size: 1.4em;
+        font-weight: normal;
+    }
+}
