@@ -21,6 +21,7 @@ IncludeWP is built on pure PHP and JavaScript so it should be working out of the
 
 If you'd like to keep the GitHub stats and framework screenshots up to date, you should execute `cronjobs/weekly-update.php` on a weekly basis.
 Before you do that, you'll need to update `includes/config.php` with your keys/tokens:
+
 1. Sign-up for a free account via [Page2Images](http://www.page2images.com) and set `PAGE_2_IMAGES_REST_KEY` & `PAGE_2_IMAGES_KEY` with your keys.
 2. Create your [personal GitHub token](https://github.com/settings/tokens/new) and set `GITHUB_ACCESS_TOKEN` with the token.
 
