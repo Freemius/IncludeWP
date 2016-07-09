@@ -16,6 +16,7 @@
             <p>For frameworks updates follow us</p>
             <a class="twitter-follow-button"
                href="https://twitter.com/freemius">Follow @freemius</a>
+            <p>Contact us via <a href="mailto:hello@freemius.com">hello@freemius.com</a></p>
             <h3>IncludeWP is proudly hosted and maintained with <b>❤</b> by <a
                     href="https://freemius.com?utm_source=includewp_home&utm_medium=link&utm_content=footer&utm_campaign=includewp">Freemius</a>.
             </h3>
