@@ -1,7 +1,7 @@
 <!-- Cover -->
 <div id="cover" class="section">
     <div class="container">
-        <h1 class="logo"><a href="/"><i class="fa fa-terminal"></i> IncludeWP</a></h1>
+        <a href="/" class="logo"><h1><i class="fa fa-terminal"></i> IncludeWP</h1></a>
 
         <h2>Top Open-Source Frameworks for WordPress Plugin & Theme Developers</h2>
 
