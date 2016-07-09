@@ -9,6 +9,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
@@ -17,18 +19,27 @@
     <meta name="description"
           content="IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome."/>
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card"
-          value="IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome.">
-
     <!-- Open Graph data -->
     <meta property="og:title" content="IncludeWP"/>
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="<?php echo SITE_ADDRESS ?>/assets/img/og-includewp.png"/>
     <meta property="og:url" content="<?php echo SITE_ADDRESS ?>"/>
-    <meta property="og:image" content="<?php echo SITE_ADDRESS ?>/assets/images/share.png"/>
     <meta property="og:description"
           content="IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome."/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="IncludeWP" />
+    <meta property="fb:admins" content="598827889" />
+    <meta property="fb:app_id" content="132877816722342" />
 
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@freemius">
+    <meta name="twitter:creator" content="@vovafeldman">
+    <meta name="twitter:title" content="IncludeWP">
+    <meta name="twitter:description" content="IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome.">
+    <meta name="twitter:image:src" content="<?php echo SITE_ADDRESS ?>/assets/img/og-includewp.png">
+
+<!--    <link rel="canonical" href="--><?php //echo $canonical; ?><!--" />-->
 </head>
 <body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
