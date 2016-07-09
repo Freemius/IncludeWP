@@ -10,16 +10,16 @@
   'slug' => 'cmb2',
   'github' => 
   array (
-    'stars' => 1224,
-    'forks' => 313,
-    'issues' => 212,
+    'stars' => 1228,
+    'forks' => 314,
+    'issues' => 215,
   ),
   'wordpress' => 
   array (
-    'downloads' => 120317,
+    'downloads' => 122257,
     'active' => 40000,
     'avg_rate' => '4.90',
     'votes' => 45,
   ),
-  'banner' => '//ps.w.org/cmb2/assets/banner-772x250.png?rev=1081087',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/cmb2/assets/banner-772x250.png?rev=1081087',
 );

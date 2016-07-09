@@ -15,10 +15,10 @@
   ),
   'wordpress' => 
   array (
-    'downloads' => 89757,
+    'downloads' => 90080,
     'active' => 10000,
     'avg_rate' => '4.80',
     'votes' => 71,
   ),
-  'banner' => '//ps.w.org/piklist/assets/banner-772x250.png?rev=1276948',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/piklist/assets/banner-772x250.png?rev=1276948',
 );

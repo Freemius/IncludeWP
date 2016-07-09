@@ -9,16 +9,16 @@
   'slug' => 'pods',
   'github' => 
   array (
-    'stars' => 546,
-    'forks' => 179,
-    'issues' => 929,
+    'stars' => 547,
+    'forks' => 178,
+    'issues' => 941,
   ),
   'wordpress' => 
   array (
-    'downloads' => 410216,
+    'downloads' => 411152,
     'active' => 40000,
     'avg_rate' => '4.90',
     'votes' => 124,
   ),
-  'banner' => '//ps.w.org/pods/assets/banner-772x250.png?rev=972914',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/pods/assets/banner-772x250.png?rev=972914',
 );

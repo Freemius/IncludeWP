@@ -8,8 +8,8 @@
   'slug' => 'underscores',
   'github' => 
   array (
-    'stars' => 6566,
-    'forks' => 2231,
+    'stars' => 6572,
+    'forks' => 2232,
     'issues' => 32,
   ),
   'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/d7/0a/Ny8nOEqR6rLTM6cb.png',

@@ -9,8 +9,8 @@
   'slug' => 'boilerplate',
   'github' => 
   array (
-    'stars' => 3779,
-    'forks' => 974,
+    'stars' => 3780,
+    'forks' => 976,
     'issues' => 39,
   ),
   'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/eb/28/tZaLwRsWBimwhdYU.png',

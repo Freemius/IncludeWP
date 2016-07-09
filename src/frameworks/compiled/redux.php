@@ -10,16 +10,16 @@
   'slug' => 'redux',
   'github' => 
   array (
-    'stars' => 1084,
+    'stars' => 1085,
     'forks' => 462,
-    'issues' => 16,
+    'issues' => 17,
   ),
   'wordpress' => 
   array (
-    'downloads' => 1121116,
+    'downloads' => 1124993,
     'active' => 200000,
     'avg_rate' => '4.80',
     'votes' => 140,
   ),
-  'banner' => '//ps.w.org/redux-framework/assets/banner-772x250.png?rev=1148240',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/redux-framework/assets/banner-772x250.png?rev=1148240',
 );

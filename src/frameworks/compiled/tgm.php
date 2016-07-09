@@ -9,7 +9,7 @@
   'slug' => 'tgm',
   'github' => 
   array (
-    'stars' => 1159,
+    'stars' => 1161,
     'forks' => 342,
     'issues' => 58,
   ),

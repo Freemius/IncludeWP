@@ -10,16 +10,16 @@
   'slug' => 'acf',
   'github' => 
   array (
-    'stars' => 1211,
+    'stars' => 1212,
     'forks' => 322,
     'issues' => 289,
   ),
   'wordpress' => 
   array (
-    'downloads' => 5474475,
+    'downloads' => 5483083,
     'active' => 1000000,
     'avg_rate' => '4.90',
-    'votes' => 864,
+    'votes' => 866,
   ),
-  'banner' => '//ps.w.org/advanced-custom-fields/assets/banner-772x250.png?rev=1082746',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/advanced-custom-fields/assets/banner-772x250.png?rev=1082746',
 );
