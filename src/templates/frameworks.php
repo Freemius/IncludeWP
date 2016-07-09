@@ -4,7 +4,7 @@
     <div class="container row">
         <?php foreach ($frameworks_index as $slug => $stars) : ?>
             <?php require_once $framework_files_output . $slug . '.php' ?>
-            <?php require dirname(__DIR__) . '/templates/card.php' ?>
+            <?php require dirname(__DIR__) . '/templates/framework-card.php' ?>
         <?php endforeach ?>
     </div>
 </section>
