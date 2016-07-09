@@ -1,6 +1,11 @@
 # IncludeWP
 
-[IncludeWP.com](http://includewp.com), a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome.
+[IncludeWP.com](http://includewp.com), a leaderboard of the top open-source frameworks for WordPress plugin & theme developers.
+
+## Why?
+Because code reusability is awesome!
+
+Earlier this year (March 2016), the WordPress.org plugins review team issued a statement on make.wordpress.org that [frameworks are no longer allowed in the official plugins repository](https://make.wordpress.org/plugins/2016/03/01/please-do-not-submit-frameworks/). So... we decided to build a new cozy home for all frameworks, making it easier for developers to finds what's out there to reuse before starting to work on a new project.
 
 ## Contributing
 
