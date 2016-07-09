@@ -26,6 +26,8 @@ nav, .nav-wrapper {
     @include transition(0.5s all ease-in);
 }
 
+
+
 .navbar-fixed.bevel nav {
     @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12));
 }
@@ -47,16 +49,20 @@ nav, .nav-wrapper {
     }
 
     @media only screen and (max-width: 514px) {
-        .nav-wrapper .right li:last-child {
+        .nav-wrapper .right > li:last-child {
             display: none;
         }
     }
 
     @media only screen and (max-width: 360px) {
-        .nav-wrapper .left li:first-child {
+        .nav-wrapper .left > li:first-child {
             display: none;
         }
     }
+}
+
+#header a:hover {
+    border: none;
 }
 
 //#header, nav {

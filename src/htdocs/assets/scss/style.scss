@@ -16,6 +16,10 @@ h1 {
     color: #039be5;
 }
 
+a:not(.btn):hover {
+    border-bottom: 1px dashed #039be5;
+}
+
 .logo {
     font-family: 'Pacifico', cursive;
 }

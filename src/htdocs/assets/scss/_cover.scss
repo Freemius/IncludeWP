@@ -5,6 +5,7 @@ h2 {
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
+
 #cover {
     text-align: center;
     color: #ddd;
@@ -17,6 +18,10 @@ h2 {
             color: #d3135a;
             margin-right: 3px;
         }
+    }
+
+    .logo a:hover {
+        border: none;
     }
 }
 
