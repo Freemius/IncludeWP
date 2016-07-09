@@ -109,15 +109,28 @@
     }
 
     /**
-     * Dump the $framework associative array to a PHP file based on a given destination.
+     * Dump variable to a PHP file based on a given destination.
      *
-     * @param array  $framework
+     * @param array  $variable
+     * @param string $name     Variable name.
      * @param string $dest
      */
-    function dump_framework_to_php_file(&$framework, $dest)
+    function dump_var_to_php_file(&$variable, $name, $dest)
     {
         if (file_exists($dest))
             unlink($dest);
 
-        file_put_contents($dest, '<?php $framework = ' . var_export($framework, true) . ';');
+        file_put_contents($dest, '<?php ' . $name . ' = ' . var_export($variable, true) . ';');
+    }
+
+    /**
+     * @param string $path
+     *
+     * @return string
+     */
+    function canonize_file_path($path){
+        $path = str_replace('\\', '/', $path);
+        $path = preg_replace('|/+|', '/', $path);
+
+        return $path;
     }

@@ -70,7 +70,65 @@
     // Dump framework update timestamp.
     dump_var_to_php_file($frameworks_updates, '$frameworks_updates', $updates_index_path);
 
-    if (file_exists($index_path))
-        unlink($index_path);
+    /* Plugins update
+     -------------------------------------------------------------------------------------*/
+    $plugin_files        = glob(dirname(__DIR__) . '/src/plugins/*.php');
+    $plugin_files_output = dirname(__DIR__) . '/src/plugins/compiled/';
 
-    file_put_contents($index_path, '<?php $frameworks_index = ' . var_export($frameworks_index, true) . ';');
+    foreach ($plugin_files as $key => $file)
+    {
+        $framework_plugins = array();
+
+        $file = canonize_file_path($file);
+
+        $slug = substr($file, strrpos($file, '/') + 1, - 4);
+
+        $plugin_path = $plugin_files_output . substr($file, strrpos($file, '/') + 1);
+
+        // Get plugins index.
+        require_once $file;
+
+        $framework_plugins_data = array();
+
+        if (file_exists($plugin_path))
+        {
+            require_once $plugin_path;
+        }
+
+        foreach ($plugins_index as $plugin_slug)
+        {
+            if (isset($framework_plugins_data[$plugin_slug]) && $framework_plugins_data[$plugin_slug]['last_update'] >= (time() - WEEK_IN_SEC) && $plugin_path)
+            {
+                // Plugin data already pulled during the last week.
+                continue;
+            }
+
+            $framework_plugins_data[$plugin_slug] = array('wp_slug' => $plugin_slug);
+
+            enrich_with_wp($framework_plugins_data[$plugin_slug]);
+
+            // @todo handle case when plugin doesn't have a banner image.
+//            if ( ! isset($framework_plugins_data[$plugin_slug]['banner']))
+//                enrich_banner($framework_plugins_data[$plugin_slug]);
+
+            // Add banner protocol if missing before running via CDN.
+            if ('/' === $framework_plugins_data[$plugin_slug]['banner'][0])
+                $framework_plugins_data[$plugin_slug]['banner'] = 'http:' . $framework_plugins_data[$plugin_slug]['banner'];
+
+            // Add images CDN proxy
+            $framework_plugins_data[$plugin_slug]['banner'] = 'https://res.cloudinary.com/freemius/image/fetch/' . $framework_plugins_data[$plugin_slug]['banner'];
+
+            $framework_plugins_data[$plugin_slug]['last_update'] = time();
+        }
+
+        dump_var_to_php_file($framework_plugins_data, '$plugins', $plugin_path);
+    }
+
+    // Sort frameworks by stars.
+//    arsort($plugins_index);
+
+    // Dump index.
+//    dump_var_to_php_file($plugins_index, '$plugins_index', $index_path);
+
+    // Dump framework update timestamp.
+//    dump_var_to_php_file($plugins_updates, '$plugins_updates', $updates_index_path);
