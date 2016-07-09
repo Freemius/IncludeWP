@@ -18,16 +18,16 @@
                     stars <i class="fa fa-toggle-down"></i></a>
                 <!-- Dropdown Structure -->
                 <ul id="sortby" class='dropdown-content'>
-                    <li><a href="#" data-sort="stars" class="light-blue-text">Sort by stars <i
+                    <li><a data-sort="stars" class="light-blue-text">Sort by stars <i
                                 class="fa fa-star"></i></a>
                     </li>
-                    <li><a href="#" data-sort="forks" class="light-blue-text">Sort by forks <i
+                    <li><a data-sort="forks" class="light-blue-text">Sort by forks <i
                                 class="fa fa-code-fork"></i></a>
                     </li>
-                    <li><a href="#" data-sort="issues" class="light-blue-text">Sort by issues <i class="fa fa-bug"></i></a>
+                    <li><a data-sort="issues" class="light-blue-text">Sort by issues <i class="fa fa-bug"></i></a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="#!" data-sort="name" class="light-blue-text">Sort by name <i
+                    <li><a data-sort="name" class="light-blue-text">Sort by name <i
                                 class="fa fa-sort-alpha-asc"></i></a>
                     </li>
                     <!--            <li><a href="#!">three</a></li>-->
