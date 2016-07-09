@@ -1,4 +1,4 @@
-<?php require_once dirname(__DIR__) . "/frameworks/compiled/index.php" ?>
+<?php require_once dirname(__DIR__) . "/frameworks/compiled/_index.php" ?>
 <?php $framework_files_output = dirname(dirname(__DIR__)) . '/src/frameworks/compiled/' ?>
 <section id="frameworks" class="section">
     <div class="container row">
