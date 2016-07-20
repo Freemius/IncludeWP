@@ -78,6 +78,60 @@
     }
 
     /**
+     * Pull plugin's info from WordPress.org plugins' API and enrich the $framework object.
+     *
+     * @param array $theme
+     */
+    function enrich_with_wp_theme(&$theme)
+    {
+        console_log($theme['wp_slug'] . ' - Fetching details from WordPress.org Themes API.');
+
+        $api_endpoint = 'http://api.wordpress.org/themes/info/1.0/';
+
+        $ch      = curl_init();
+        $options = array(
+            CURLOPT_URL            => $api_endpoint,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_CUSTOMREQUEST  => 'POST',
+            CURLOPT_POST           => true,
+            CURLOPT_POSTFIELDS     => http_build_query(array(
+                'action'  => 'theme_information',
+                'request' => serialize((object) array(
+                    'slug'   => $theme['wp_slug'],
+                    'fields' => array(
+                        'homepage'        => true,
+                        'theme_url'       => true,
+                        'description'     => true,
+                        'sections'        => false,
+                        'screenshot_url'  => true,
+                        'active_installs' => true,
+                    ),
+                ))
+            )),
+        );
+
+        curl_setopt_array($ch, $options);
+
+        $result = curl_exec($ch);
+
+        $wp_repo = get_object_vars(unserialize($result));
+
+        $theme['wordpress'] = array(
+            'name'              => $wp_repo['name'],
+            'short_description' => $wp_repo['description'],
+            'homepage'          => $wp_repo['theme_url'],
+            'downloads'         => intval($wp_repo['downloaded']),
+            'active'            => intval($wp_repo['active_installs']),
+            'avg_rate'          => number_format(5 * (floatval($wp_repo['rating']) / 100), 2),
+            'votes'             => intval($wp_repo['num_ratings']),
+        );
+
+        if (isset($wp_repo['screenshot_url']))
+            $theme['banner'] = $wp_repo['screenshot_url'];
+    }
+
+    /**
      * Uses page2images API to snap a screenshot of the framework's homepage and enrich the $framework object.
      *
      * @param array $framework
