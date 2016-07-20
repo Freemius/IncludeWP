@@ -84,6 +84,9 @@
         }
 
         $framework['wordpress'] = array(
+            'name'              => $wp_repo['name'],
+            'short_description' => $wp_repo['short_description'],
+            'homepage'          => $wp_repo['homepage'],
             'downloads' => intval($wp_repo['downloaded']),
             'active'    => intval($wp_repo['active_installs']),
             'avg_rate'  => number_format(5 * (floatval($wp_repo['rating']) / 100), 2),
