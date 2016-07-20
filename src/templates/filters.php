@@ -49,12 +49,12 @@
                             return an.localeCompare(bn);
                         }
 
-                        // By GitHub details.
-                        an = $(a).find('.github-details .' + sortBy + ' span').text();
-                        bn = $(b).find('.github-details .' + sortBy + ' span').text();
+                        // By details.
+                        an = parseInt($(a).find('.details .' + sortBy + ' span').text().replace(/,/g, ""));
+                        bn = parseInt($(b).find('.details .' + sortBy + ' span').text().replace(/,/g, ""));
 
                         // Descending sort.
-                        return bn.localeCompare(an);
+                        return (an > bn) ? -1 : ((an < bn) ? 1 : 0);
                     });
 
                     $cards.detach().appendTo($('#frameworks > .container'));
