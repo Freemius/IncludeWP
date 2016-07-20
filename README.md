@@ -49,7 +49,7 @@ Before you do that, you'll need to update `includes/config.php` with your keys/t
 
 IncludeWP is built and maintained with ❤ by [Freemius](https://freemius.com) -- [Analytics](https://freemius.com/wordpress/insights/), [Monetization](https://freemius.com/wordpress/checkout/) and [Marketing Automation](https://freemius.com/#automation) platform for WordPress theme & plugin developers.
 
-A big shout out to the CSO (Chief Scraper Officer) Luca Fracassi from [Addendion](https://addendio.com/) that built a custom API endpoint just for this project.
+A big shout out to Luca Fracassi from [Addendion](https://addendio.com/), a search engine for WordPress plugins & themes, who helped us detecting on which WordPress plugins/themes frameworks are being used.
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
