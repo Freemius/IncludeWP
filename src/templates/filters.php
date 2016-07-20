@@ -1,3 +1,26 @@
+<?php
+    if (empty($framework_slug))
+    {
+        // GitHub data.
+        $sort_by = array(
+            'stars'  => 'star',
+            'forks'  => 'code-fork',
+            'issues' => 'bug',
+        );
+    }
+    else
+    {
+        // WordPress.org data.
+        $sort_by = array(
+            'installs'  => 'heartbeat',
+            'rate'      => 'star',
+            'downloads' => 'download',
+        );
+    }
+
+    reset($sort_by);
+    $default_sort_by = key($sort_by);
+?>
 <!-- Filters -->
 <div id="filters">
     <div class="placeholder"></div>
@@ -6,38 +29,38 @@
         <div class="container row valign-wrapper">
             <div class="col s6 valign">
                 <input type="checkbox" id="show_plugins" checked="checked" class="filled-in checkbox-blue"/>
-                <label for="show_plugins" class="plugin uppercase">Plugin <i class="fa fa-plug plugin"></i></label>
+                <label for="show_plugins"
+                       class="plugin uppercase">Plugin<?php echo isset($plugins_count) ? " [{$plugins_count}]" : '' ?>
+                    <i class="fa fa-plug plugin"></i></label>
 
                 <input type="checkbox" id="show_themes" checked="checked" class="filled-in checkbox-magenta"/>
-                <label for="show_themes" class="theme uppercase">Theme <i class="fa fa-paint-brush theme"></i></label>
+                <label for="show_themes"
+                       class="theme uppercase">Theme<?php echo isset($themes_count) ? " [{$themes_count}]" : '' ?> <i
+                        class="fa fa-paint-brush theme"></i></label>
             </div>
             <div class="col s6 right-align">
                 <!-- Dropdown Trigger -->
                 <a id="sortby_trigger" class="dropdown-button btn waves-effect waves-light light-blue" href='#'
                    data-activates='sortby'>Sorted by
-                    stars <i class="fa fa-toggle-down"></i></a>
+                    <?php echo $default_sort_by ?> <i class="fa fa-toggle-down"></i></a>
                 <!-- Dropdown Structure -->
                 <ul id="sortby" class='dropdown-content'>
-                    <li><a data-sort="stars" class="light-blue-text">Sort by stars <i
-                                class="fa fa-star"></i></a>
-                    </li>
-                    <li><a data-sort="forks" class="light-blue-text">Sort by forks <i
-                                class="fa fa-code-fork"></i></a>
-                    </li>
-                    <li><a data-sort="issues" class="light-blue-text">Sort by issues <i class="fa fa-bug"></i></a>
-                    </li>
+                    <?php foreach ($sort_by as $metric => $icon) : ?>
+                        <li><a href="#!" data-sort="<?php echo $metric ?>" class="light-blue-text">Sort
+                                by <?php echo $metric ?> <i
+                                    class="fa fa-<?php echo $icon ?>"></i></a>
+                        </li>
+                    <?php endforeach ?>
                     <li class="divider"></li>
-                    <li><a data-sort="name" class="light-blue-text">Sort by name <i
+                    <li><a href="#!" data-sort="name" class="light-blue-text">Sort by name <i
                                 class="fa fa-sort-alpha-asc"></i></a>
                     </li>
-                    <!--            <li><a href="#!">three</a></li>-->
                 </ul>
             </div>
 
             <script type="text/javascript">
-                $('#sortby a').on('click', function () {
-                    var $cards = $('.card-container'),
-                        sortBy = $(this).attr('data-sort');
+                var sortItems = function (sortBy) {
+                    var $cards = $('.card-container');
 
                     $cards.sort(function (a, b) {
                         var an, bn;
@@ -60,6 +83,10 @@
                     $cards.detach().appendTo($('#frameworks > .container'));
 
                     $('#sortby_trigger').html($(this).html().replace('Sort', 'Sorted'))
+                };
+
+                $('#sortby a').on('click', function () {
+                    sortItems($(this).attr('data-sort'));
                 });
 
                 $('#show_plugins').change(function () {
