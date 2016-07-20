@@ -2,6 +2,7 @@
 @import "colors";
 @import "nav";
 @import "cover";
+@import "framework";
 @import "filters";
 @import "card";
 @import "footer";
@@ -9,11 +10,6 @@
 body {
     background: url('/assets/img/bkg-pattern.png') repeat;
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    color: #039be5;
 }
 
 a:not(.btn):hover {

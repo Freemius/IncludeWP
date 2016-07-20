@@ -21,6 +21,10 @@
             margin: 10px;
             border-radius: 6px;
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90%;
 
             a {
                 color: #fff;
@@ -55,7 +59,7 @@
         }
     }
 
-    .github-details {
+    .details {
         font-size: 1.2em;
 
         i.fa {

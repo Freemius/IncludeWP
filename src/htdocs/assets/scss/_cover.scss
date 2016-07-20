@@ -10,6 +10,12 @@ h2 {
     text-align: center;
     color: #ddd;
     background: #333;
+    border-bottom: 1px solid #222;
+
+    h1 {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        color: #039be5;
+    }
 
     .powered-by {
         font-style: italic;
