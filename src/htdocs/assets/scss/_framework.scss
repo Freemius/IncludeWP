@@ -44,9 +44,10 @@
     }
 
     .tweet-button {
-        position: absolute;
+        /* position: relative;
         top: 8px;
-        right: 8px;
+        right: 8px; */
+        margin-top: 1rem;
     }
 
     > .container {

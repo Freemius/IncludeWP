@@ -45,37 +45,42 @@
 ?>
 <section id="framework" class="section">
     <div id="focus"></div>
-    <div class="container row">
-        <h1><?php echo $framework_name ?></h1>
+    <div class="container row" style="margin-bottom:0!important;">
+        <div class="col s12 m8 l8">
+            <h1><?php echo $framework_name ?></h1>
 
-        <p><?php echo $framework['description'] ?></p>
+            <p><?php echo $framework['description'] ?></p>
 
-        <div class="row">
-            <?php if ($has_wp_repo) : ?>
-                <div class="col s4">
-                    <nobr><a class="wordpress"
-                             href="https://wordpress.org/plugins/<?php echo trim($framework['wp_slug'], '/') ?>/"
-                             target="_blank" title="WordPress.org"><i class="fa fa-wordpress"></i> WP.org</a></nobr>
+            <div class="row">
+                <?php if ($has_wp_repo) : ?>
+                    <div class="col s4">
+                        <nobr><a class="wordpress"
+                                 href="https://wordpress.org/plugins/<?php echo trim($framework['wp_slug'], '/') ?>/"
+                                 target="_blank" title="WordPress.org"><i class="fa fa-wordpress"></i> WP.org</a></nobr>
+                    </div>
+                <?php endif ?>
+                <div class="col">
+                    <nobr><a class="github" href="https://github.com/<?php echo trim($framework['github_repo'], '/') ?>/"
+                             target="_blank" title="GitHub"><i class="fa fa-github"></i>
+                            https://github.com/<?php echo trim($framework['github_repo'], '/') ?>/</a></nobr>
                 </div>
-            <?php endif ?>
-            <div class="col">
-                <nobr><a class="github" href="https://github.com/<?php echo trim($framework['github_repo'], '/') ?>/"
-                         target="_blank" title="GitHub"><i class="fa fa-github"></i>
-                        https://github.com/<?php echo trim($framework['github_repo'], '/') ?>/</a></nobr>
-            </div>
-            <div class="col">
-                <nobr><a class="homepage" href="<?php echo trim($framework['homepage'], '/') ?>/" target="_blank"
-                         title="Homepage"><i class="fa fa-home"></i> <?php echo trim($framework['homepage'], '/') ?>
-                        /</a></nobr>
+                <div class="col">
+                    <nobr><a class="homepage" href="<?php echo trim($framework['homepage'], '/') ?>/" target="_blank"
+                             title="Homepage"><i class="fa fa-home"></i> <?php echo trim($framework['homepage'], '/') ?>
+                            /</a></nobr>
+                </div>
             </div>
         </div>
-
-        <blockquote>
+        <div class="col s12 m4 l4">
+        
+        <div class="white includewp-tweet"> 
+          <div class="row">
+            <div class="col s12">
             <?php if ($is_empty_result) : ?>
                 <?php $item_label = ! $framework['is_for_themes'] ?
                     'plugins' :
                     (! $framework['is_for_plugins'] ? 'themes' : 'plugins or themes') ?>
-                <p>
+                <p class="black-text">
                     <?php if ($framework['is_for_themes'] && ! $framework['is_for_plugins']) : ?>
                         Oops... We couldn't find any theme using the framework on WordPress.org. If your theme is listed on WordPress.org and you can't find it here - please
                         <a href="https://github.com/Freemius/IncludeWP/issues/new" target="_blank">open an issue on our
@@ -88,16 +93,23 @@
                             repo</a>. In the ticket, provide the items .org URL and the path of the framework in your product.
                     <?php endif ?>
                 </p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col s12">
             <?php else : ?>
                 <a href="https://twitter.com/home?status=<?php echo urlencode($tweet . " $framework_url") ?>"
                    target="_blank"><i class="fa fa-twitter"></i> <?php echo $tweet ?></a>
-                <span class="tweet-button"><a href="https://twitter.com/share" class="twitter-share-button"
+                <span class="tweet-button right"><a href="https://twitter.com/share" class="twitter-share-button"
                                               data-text="<?php echo htmlspecialchars($tweet) ?>"
                                               data-url="<?php echo $framework_url ?>"
                                               data-size="large"
                                               data-count="none">Tweet</a></span>
             <?php endif ?>
-        </blockquote>
+            </div>
+        </div>
+        </div>
+        </div>
         <?php if ( ! $is_empty_result) : ?>
             <script type="text/javascript">!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
