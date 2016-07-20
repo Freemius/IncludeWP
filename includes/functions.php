@@ -62,9 +62,26 @@
      */
     function enrich_with_wp(&$framework)
     {
-        // Fetch details from GitHub API.
+        console_log($framework['wp_slug'] . ' - Fetching details from WordPress.org Plugins API.');
+
+        $wp_repo = null;
+        $retries = 3;
+
+        while ($retries > 0 && ! is_array($wp_repo) || empty($wp_repo['name']))
+        {
+            // Fetch details from WordPress.org plugins API.
         $wp_repo_json = file_get_contents('http://api.wordpress.org/plugins/info/1.0/' . $framework['wp_slug'] . '.json?fields=active_installs,icons,banners');
         $wp_repo      = json_decode($wp_repo_json, true);
+
+            if ( ! is_array($wp_repo) || empty($wp_repo['name']))
+            {
+                // Probably blocked by .org.
+                $sleep = rand(10, 30);
+                console_log($framework['slug'] . " - Request failed, going to sleep for {$sleep} sec (retry " . (4 - $retries) . ")");
+                sleep($sleep);
+                $retries --;
+            }
+        }
 
         $framework['wordpress'] = array(
             'downloads' => intval($wp_repo['downloaded']),
