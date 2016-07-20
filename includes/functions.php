@@ -1,4 +1,14 @@
 <?php
+    define('SCRIPT_START', time());
+    global $LOG_COUNTER;
+    $LOG_COUNTER = 0;
+
+    function console_log($msg)
+    {
+        global $LOG_COUNTER;
+        echo '[' . number_format(time() - SCRIPT_START) . 's] [' . ($LOG_COUNTER ++) . "] $msg\n";
+    }
+
     /**
      * Execute simple GET request to a given URL.
      *
@@ -26,6 +36,8 @@
      */
     function enrich_with_github(&$framework)
     {
+        console_log($framework['slug'] . ' - Fetching details from GitHub API.');
+
         // Fetch details from GitHub API.
         $github_repo_json = get_content_from_github('https://api.github.com/repos/' . $framework['github_repo'] . '?access_token=' . GITHUB_ACCESS_TOKEN);
         $github_repo      = json_decode($github_repo_json, true);
@@ -74,6 +86,8 @@
     {
         if (isset($framework['homepage']))
         {
+            console_log($framework['slug'] . ' - Enriching banner with homepage screenshot.');
+
             $http_homepage = urlencode(str_replace('https://', 'http://', $framework['homepage']));
 
             $screenshot_fetch_url = 'http://api.page2images.com/restfullink?p2i_url=' . $http_homepage . '&p2i_size=772x250&p2i_key=' . PAGE_2_IMAGES_REST_KEY;
@@ -103,6 +117,8 @@
         }
         else
         {
+            console_log($framework['slug'] . ' - Enriching banner with random tech image.');
+
             // Use generic placeholder.
             $framework['banner'] = 'https://placeimg.com/518/168/tech';
         }

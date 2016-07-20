@@ -22,8 +22,16 @@
         $slug = substr($file, strrpos($file, '/') + 1, - 4);
         $framework_path = $framework_files_output . substr($file, strrpos($file, '/') + 1);
 
-        if (isset($frameworks_updates[$slug]) && $frameworks_updates[$slug] >= (time() - WEEK_IN_SEC) && file_exists($framework_path))
+            console_log($slug . ' - Starting to handle framework.');
+
+            // Fetch data only if last cached more than a week ago.
+            if (isset($frameworks_updates[$slug]) &&
+                $frameworks_updates[$slug] >= (time() - WEEK_IN_SEC) &&
+                file_exists($framework_path)
+            )
         {
+                console_log($slug . ' - Framework cache file is still valid (weekly refresh).');
+
             // Get framework cached data.
             require_once $framework_path;
         }
@@ -85,6 +93,8 @@
 
         $plugin_path = $plugin_files_output . substr($file, strrpos($file, '/') + 1);
 
+            console_log($slug . ' - Starting to handle framework plugins.');
+
         // Get plugins index.
         require_once $file;
 
@@ -97,8 +107,12 @@
 
         foreach ($plugins_index as $plugin_slug)
         {
-            if (isset($framework_plugins_data[$plugin_slug]) && $framework_plugins_data[$plugin_slug]['last_update'] >= (time() - WEEK_IN_SEC) && $plugin_path)
+                console_log($slug . ' - ' . $plugin_slug . ' - Starting to handle plugin.');
+
+                if (isset($plugins[$plugin_slug]) && $plugins[$plugin_slug]['last_update'] >= (time() - WEEK_IN_SEC) && $plugin_path)
             {
+                    console_log($slug . ' - ' . $plugin_slug . ' - plugin cache file is still valid (weekly refresh).');
+
                 // Plugin data already pulled during the last week.
                 continue;
             }
