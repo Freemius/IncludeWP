@@ -18,7 +18,7 @@
      */
     function get_content_from_github($url)
     {
-        $ch = curl_init();
+        $ch      = curl_init();
 
         $options = array(
             CURLOPT_URL            => $url,
@@ -56,7 +56,7 @@
     }
 
     /**
-     * Pull framework info from WordPress.org plugins' API and enrich the $framework object.
+     * Pull plugin's info from WordPress.org plugins' API and enrich the $framework object.
      *
      * @param array $framework
      */
@@ -70,8 +70,8 @@
         while ($retries > 0 && ! is_array($wp_repo) || empty($wp_repo['name']))
         {
             // Fetch details from WordPress.org plugins API.
-        $wp_repo_json = file_get_contents('http://api.wordpress.org/plugins/info/1.0/' . $framework['wp_slug'] . '.json?fields=active_installs,icons,banners');
-        $wp_repo      = json_decode($wp_repo_json, true);
+            $wp_repo_json = file_get_contents('http://api.wordpress.org/plugins/info/1.0/' . $framework['wp_slug'] . '.json?fields=active_installs,icons,banners');
+            $wp_repo      = json_decode($wp_repo_json, true);
 
             if ( ! is_array($wp_repo) || empty($wp_repo['name']))
             {
@@ -87,10 +87,10 @@
             'name'              => $wp_repo['name'],
             'short_description' => $wp_repo['short_description'],
             'homepage'          => $wp_repo['homepage'],
-            'downloads' => intval($wp_repo['downloaded']),
-            'active'    => intval($wp_repo['active_installs']),
-            'avg_rate'  => number_format(5 * (floatval($wp_repo['rating']) / 100), 2),
-            'votes'     => intval($wp_repo['num_ratings']),
+            'downloads'         => intval($wp_repo['downloaded']),
+            'active'            => intval($wp_repo['active_installs']),
+            'avg_rate'          => number_format(5 * (floatval($wp_repo['rating']) / 100), 2),
+            'votes'             => intval($wp_repo['num_ratings']),
         );
 
         if (isset($wp_repo['banners']))
@@ -208,7 +208,7 @@
      * Dump variable to a PHP file based on a given destination.
      *
      * @param array  $variable
-     * @param string $name     Variable name.
+     * @param string $name Variable name.
      * @param string $dest
      * @param bool   $strip_keys
      */
@@ -233,12 +233,14 @@
      *
      * @return string
      */
-    function canonize_file_path($path){
+    function canonize_file_path($path)
+    {
         $path = str_replace('\\', '/', $path);
         $path = preg_replace('|/+|', '/', $path);
 
         return $path;
     }
+
     /**
      * @param string $slug
      *
