@@ -6,4 +6,8 @@
         'homepage'       => 'https://freemius.com',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'class-freemius.php',
+            'token' => 'class Freemius',
+        ),
     );

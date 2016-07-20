@@ -7,4 +7,8 @@
         'homepage'       => 'http://upstatement.com/timber',
         'is_for_plugins' => false,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'Timber.php',
+            'token' => 'class Timber',
+        ),
     );

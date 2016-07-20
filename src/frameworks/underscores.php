@@ -6,4 +6,8 @@
         'homepage'       => 'http://underscores.me/',
         'is_for_plugins' => false,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'functions.php',
+            'token' => 'function _s_setup()',
+        ),
     );

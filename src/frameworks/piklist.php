@@ -7,4 +7,8 @@
         'homepage'       => 'https://piklist.com',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'class-piklist.php',
+            'token' => 'class PikList',
+        ),
     );

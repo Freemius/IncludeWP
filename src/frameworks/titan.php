@@ -8,4 +8,8 @@
         'homepage'       => 'http://www.titanframework.net',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'titan-framework-checker.php',
+            'token' => 'class TitanFrameworkChecker',
+        ),
     );

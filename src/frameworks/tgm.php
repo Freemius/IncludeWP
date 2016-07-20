@@ -7,4 +7,8 @@
         'homepage'       => 'http://tgmpluginactivation.com/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'class-tgm-plugin-activation.php',
+            'token' => 'class TGM_Plugin_Activation',
+        ),
     );

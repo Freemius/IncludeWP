@@ -7,4 +7,8 @@
         'homepage'       => 'http://framework.themosis.com/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'themosis.php',
+            'token' => 'class Themosis',
+        ),
     );

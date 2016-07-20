@@ -8,4 +8,8 @@
         'homepage'       => 'http://wptheming.com/options-framework-plugin',
         'is_for_plugins' => false,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'options-framework.php',
+            'token' => "'OPTIONS_FRAMEWORK_VERSION'",
+        ),
     );

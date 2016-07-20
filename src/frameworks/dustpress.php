@@ -6,4 +6,8 @@
         'homepage'       => 'http://www.dustpress.com',
         'is_for_plugins' => false,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'dustpress.php',
+            'token' => 'class DustPress',
+        ),
     );

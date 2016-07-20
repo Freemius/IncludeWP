@@ -7,4 +7,8 @@
         'homepage'       => 'http://pods.io/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'Pods.php',
+            'token' => 'class Pods',
+        ),
     );

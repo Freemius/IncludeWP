@@ -7,4 +7,8 @@
         'homepage'       => 'https://wp-types.com/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'wpcf.php',
+            'token' => 'function wpcf_init()',
+        ),
     );
