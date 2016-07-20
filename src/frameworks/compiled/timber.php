@@ -6,16 +6,24 @@
   'homepage' => 'http://upstatement.com/timber',
   'is_for_plugins' => false,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'Timber.php',
+    'token' => 'class Timber',
+  ),
   'slug' => 'timber',
   'github' => 
   array (
-    'stars' => 2690,
-    'forks' => 244,
+    'stars' => 2709,
+    'forks' => 246,
     'issues' => 90,
   ),
   'wordpress' => 
   array (
-    'downloads' => 96977,
+    'name' => 'Timber',
+    'short_description' => 'Helps you create themes faster with sustainable code. With Timber, you write HTML using Mustache-like Templates <a href="http://timber.upstatement.com" rel="nofollow">http://timber.upstatement.com</a>',
+    'homepage' => 'http://timber.upstatement.com',
+    'downloads' => 100534,
     'active' => 10000,
     'avg_rate' => '5.00',
     'votes' => 37,

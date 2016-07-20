@@ -6,16 +6,24 @@
   'homepage' => 'https://kirki.org',
   'is_for_plugins' => false,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'class-kirki.php',
+    'token' => 'class Kirki',
+  ),
   'slug' => 'kirki',
   'github' => 
   array (
-    'stars' => 581,
-    'forks' => 139,
-    'issues' => 58,
+    'stars' => 586,
+    'forks' => 143,
+    'issues' => 62,
   ),
   'wordpress' => 
   array (
-    'downloads' => 74791,
+    'name' => 'Kirki',
+    'short_description' => 'The ultimate toolkit for theme developers using the WordPress Customizer',
+    'homepage' => 'http://kirki.org',
+    'downloads' => 79303,
     'active' => 10000,
     'avg_rate' => '5.00',
     'votes' => 31,

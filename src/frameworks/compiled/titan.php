@@ -7,16 +7,24 @@
   'homepage' => 'http://www.titanframework.net',
   'is_for_plugins' => true,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'titan-framework-checker.php',
+    'token' => 'class TitanFrameworkChecker',
+  ),
   'slug' => 'titan',
   'github' => 
   array (
-    'stars' => 252,
+    'stars' => 253,
     'forks' => 112,
-    'issues' => 104,
+    'issues' => 106,
   ),
   'wordpress' => 
   array (
-    'downloads' => 30102,
+    'name' => 'Titan Framework',
+    'short_description' => 'The most easy to use WordPress option framework.',
+    'homepage' => 'http://www.titanframework.net/',
+    'downloads' => 30482,
     'active' => 7000,
     'avg_rate' => '4.50',
     'votes' => 20,

@@ -5,12 +5,17 @@
   'homepage' => 'http://www.dustpress.com',
   'is_for_plugins' => false,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'dustpress.php',
+    'token' => 'class DustPress',
+  ),
   'slug' => 'dustpress',
   'github' => 
   array (
     'stars' => 11,
     'forks' => 1,
-    'issues' => 0,
+    'issues' => 1,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/b5/e9/gxdAfOucimT86lzp.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/69/20/4GUwBehLJcNJRcsS.png',
 );

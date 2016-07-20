@@ -7,16 +7,24 @@
   'homepage' => 'http://cmb2.io/',
   'is_for_plugins' => true,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'init.php',
+    'token' => 'class CMB2_Bootstrap',
+  ),
   'slug' => 'cmb2',
   'github' => 
   array (
-    'stars' => 1228,
-    'forks' => 314,
-    'issues' => 215,
+    'stars' => 1244,
+    'forks' => 319,
+    'issues' => 222,
   ),
   'wordpress' => 
   array (
-    'downloads' => 122257,
+    'name' => 'CMB2',
+    'short_description' => 'CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.',
+    'homepage' => 'https://github.com/WebDevStudios/CMB2',
+    'downloads' => 130778,
     'active' => 40000,
     'avg_rate' => '4.90',
     'votes' => 45,

@@ -1,0 +1,17 @@
+<?php $plugins_index = array (
+   'wpbizplugins-custom-admin-help-boxes',
+   'wpbizplugins-marketers-toolbox',
+   'cta',
+   'snappy-list-builder',
+   'dooodl',
+   'landing-pages',
+   'codeblocks',
+   'wpbizplugins-easy-admin-quick-menu',
+   'timber-library',
+   'advanced-custom-fields',
+   'acf-qtranslate',
+   'leads',
+   'flaunt-your-clients-free',
+   'wp-feature-box',
+   'woocommerce-custom-tabs',
+);

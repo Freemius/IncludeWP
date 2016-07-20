@@ -7,6 +7,11 @@
   'homepage' => 'http://wptheming.com/options-framework-plugin',
   'is_for_plugins' => false,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'options-framework.php',
+    'token' => '\'OPTIONS_FRAMEWORK_VERSION\'',
+  ),
   'slug' => 'options',
   'github' => 
   array (
@@ -16,7 +21,10 @@
   ),
   'wordpress' => 
   array (
-    'downloads' => 1276346,
+    'name' => 'Options Framework',
+    'short_description' => 'A framework for building theme options.',
+    'homepage' => 'http://wptheming.com',
+    'downloads' => 1279333,
     'active' => 100000,
     'avg_rate' => '4.80',
     'votes' => 24,

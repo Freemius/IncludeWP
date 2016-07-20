@@ -7,19 +7,27 @@
   'homepage' => 'http://www.advancedcustomfields.com/',
   'is_for_plugins' => true,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'acf.php',
+    'token' => 'class acf',
+  ),
   'slug' => 'acf',
   'github' => 
   array (
-    'stars' => 1212,
-    'forks' => 322,
-    'issues' => 289,
+    'stars' => 1216,
+    'forks' => 321,
+    'issues' => 290,
   ),
   'wordpress' => 
   array (
-    'downloads' => 5483083,
+    'name' => 'Advanced Custom Fields',
+    'short_description' => 'Customise WordPress with powerful, professional and intuitive fields',
+    'homepage' => 'http://www.advancedcustomfields.com/',
+    'downloads' => 5560850,
     'active' => 1000000,
     'avg_rate' => '4.90',
-    'votes' => 866,
+    'votes' => 867,
   ),
   'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/advanced-custom-fields/assets/banner-772x250.png?rev=1082746',
 );

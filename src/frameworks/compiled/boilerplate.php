@@ -6,12 +6,17 @@
   'homepage' => 'http://wppb.io/',
   'is_for_plugins' => true,
   'is_for_themes' => false,
+  'thumbprint' => 
+  array (
+    'file' => '/{plugin-slug}/includes/index.php',
+    'token' => '<?php // Silence is golden',
+  ),
   'slug' => 'boilerplate',
   'github' => 
   array (
-    'stars' => 3780,
-    'forks' => 976,
-    'issues' => 39,
+    'stars' => 3800,
+    'forks' => 981,
+    'issues' => 40,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/eb/28/tZaLwRsWBimwhdYU.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/4e/4b/YAmEky4d1sbcTcTq.png',
 );

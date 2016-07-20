@@ -7,16 +7,24 @@
   'homepage' => 'http://redux.io/',
   'is_for_plugins' => true,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'framework.php',
+    'token' => 'class ReduxFramework',
+  ),
   'slug' => 'redux',
   'github' => 
   array (
-    'stars' => 1085,
-    'forks' => 462,
-    'issues' => 17,
+    'stars' => 1091,
+    'forks' => 465,
+    'issues' => 10,
   ),
   'wordpress' => 
   array (
-    'downloads' => 1124993,
+    'name' => 'Redux Framework',
+    'short_description' => 'Redux is a simple, truly extensible and fully responsive options framework for WordPress themes and plugins. Ships with an integrated demo.',
+    'homepage' => 'http://wordpress.org/plugins/redux-framework',
+    'downloads' => 1142764,
     'active' => 200000,
     'avg_rate' => '4.80',
     'votes' => 140,

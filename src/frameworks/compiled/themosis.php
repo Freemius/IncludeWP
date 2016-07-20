@@ -6,12 +6,17 @@
   'homepage' => 'http://framework.themosis.com/',
   'is_for_plugins' => true,
   'is_for_themes' => true,
+  'thumbprint' => 
+  array (
+    'file' => 'themosis.php',
+    'token' => 'class Themosis',
+  ),
   'slug' => 'themosis',
   'github' => 
   array (
-    'stars' => 334,
-    'forks' => 58,
-    'issues' => 39,
+    'stars' => 336,
+    'forks' => 57,
+    'issues' => 44,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/d2/ff/yJuTZ31pgHklosFt.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/07/43/0PqRLG0ysilUFA3o.png',
 );
