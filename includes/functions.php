@@ -184,13 +184,22 @@
      * @param array  $variable
      * @param string $name     Variable name.
      * @param string $dest
+     * @param bool   $strip_keys
      */
-    function dump_var_to_php_file(&$variable, $name, $dest)
+    function dump_var_to_php_file(&$variable, $name, $dest, $strip_keys = false)
     {
         if (file_exists($dest))
             unlink($dest);
 
-        file_put_contents($dest, '<?php ' . $name . ' = ' . var_export($variable, true) . ';');
+        $export = var_export($variable, true);
+
+        if ($strip_keys)
+        {
+            // Strip array numeric keys.
+            $export = preg_replace('(\d+\s=>)', "", $export);
+        }
+
+        file_put_contents($dest, '<?php ' . $name . ' = ' . $export . ';');
     }
 
     /**
