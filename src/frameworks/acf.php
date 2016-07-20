@@ -8,4 +8,8 @@
         'homepage'       => 'http://www.advancedcustomfields.com/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'acf.php',
+            'token' => 'class acf',
+        ),
     );

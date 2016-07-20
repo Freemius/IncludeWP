@@ -7,4 +7,8 @@
         'homepage'       => 'http://wppb.io/',
         'is_for_plugins' => true,
         'is_for_themes'  => false,
+        'thumbprint'     => array(
+            'file'  => '/{plugin-slug}/includes/index.php',
+            'token' => '<?php // Silence is golden',
+        ),
     );

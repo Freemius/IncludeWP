@@ -8,4 +8,8 @@
         'homepage'       => 'http://cmb2.io/',
         'is_for_plugins' => true,
         'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'init.php',
+            'token' => 'class CMB2_Bootstrap',
+        ),
     );
