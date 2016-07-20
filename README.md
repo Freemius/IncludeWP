@@ -39,6 +39,7 @@ Before you do that, you'll need to update `includes/config.php` with your keys/t
 * [Google Fonts] (https://www.google.com/fonts)
 
 ### APIs
+* Addendio: Pulling WordPress.org plugins & themes based on a slug ([private API by Addendio](https://addendio.com/)).
 * GitHub: Pulling the framework's GitHub repo stats (https://api.github.com).
 * WordPress.org Plugins: Pulling the framework's banner (https://api.wordpress.org/plugins/info/1.0/).
 * Page2Images: Generating a screenshot of the framework's homepage (http://api.page2images.com).
@@ -47,6 +48,8 @@ Before you do that, you'll need to update `includes/config.php` with your keys/t
 ## Freemius
 
 IncludeWP is built and maintained with ❤ by [Freemius](https://freemius.com) -- [Analytics](https://freemius.com/wordpress/insights/), [Monetization](https://freemius.com/wordpress/checkout/) and [Marketing Automation](https://freemius.com/#automation) platform for WordPress theme & plugin developers.
+
+A big shout out to the CSO (Chief Scraper Officer) Luca Fracassi from [Addendion](https://addendio.com/) that built a custom API endpoint just for this project.
 
 ## License
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
