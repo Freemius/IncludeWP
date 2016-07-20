@@ -4,11 +4,15 @@
     echo ' themes'; ?>">
     <div class="card small">
         <div class="card-image">
-            <div class="image-container">
-            <img src="<?php echo $framework['banner'] ?>">
-            </div>
-            <span class="card-title"><?php echo $framework['name'] ?></span>
-<!--            <span class="card-title"><a href="/--><?php //echo $framework['slug'] ?><!--/">--><?php //echo $framework['name'] ?><!--</a></span>-->
+            <a href="/<?php echo $framework['slug'] ?>/#focus">
+                <div class="image-container">
+                    <img src="<?php echo $framework['banner'] ?>">
+                </div>
+            </a>
+            <span class="card-title"><a
+                    href="/<?php echo $framework['slug'] ?>/#focus"><?php echo $framework['name'] ?></a></span>
+            <!--            <span class="card-title"><a href="/--><?php //echo $framework['slug'] ?><!--/">-->
+            <?php //echo $framework['name'] ?><!--</a></span>-->
 
             <div class="compatibility">
                 <?php if ($framework['is_for_plugins']) : ?>
@@ -20,7 +24,7 @@
         </div>
         <div class="card-content">
             <!-- GitHub Summary -->
-            <div class="row github-details center">
+            <div class="row details center">
                 <div class="col s4 stars" title="Stars">
                     <i class="fa fa-star"></i>
                     <span><?php echo number_format($framework['github']['stars']) ?></span>
@@ -41,11 +45,11 @@
         <div class="card-action center">
             <?php $col_width = $has_wp_repo ? 's4' : 's6' ?>
             <?php if ($has_wp_repo) : ?>
-            <div class="col s4">
-                <nobr><a class="wordpress"
-                         href="https://wordpress.org/plugins/<?php echo trim($framework['wp_slug'], '/') ?>/"
-                         target="_blank" title="WordPress.org"><i class="fa fa-wordpress"></i> WP.org</a></nobr>
-            </div>
+                <div class="col s4">
+                    <nobr><a class="wordpress"
+                             href="https://wordpress.org/plugins/<?php echo trim($framework['wp_slug'], '/') ?>/"
+                             target="_blank" title="WordPress.org"><i class="fa fa-wordpress"></i> WP.org</a></nobr>
+                </div>
             <?php endif ?>
             <div class="col <?php echo $col_width ?>">
                 <nobr><a class="github" href="https://github.com/<?php echo trim($framework['github_repo'], '/') ?>/"
