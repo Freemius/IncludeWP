@@ -239,3 +239,98 @@
 
         return $path;
     }
+    /**
+     * @param string $slug
+     *
+     * @return array
+     */
+    function get_framework_items($slug)
+    {
+        console_log($slug . ' - Fetching framework items from Addendio.');
+
+        $result = file_get_contents("https://includewp.firebaseio.com/{$slug}.json");
+
+        return json_decode($result, true);
+    }
+
+    /**
+     * Fetch framework plugins and themes, and merge them with the existing
+     * item indexes.
+     *
+     * @param string $framework
+     * @param string $plugins_dir
+     * @param string $themes_dir
+     */
+    function dump_framework_items($framework, $plugins_dir, $themes_dir)
+    {
+        $slug = $framework['slug'];
+
+        $framework_plugins_and_themes = get_framework_items($slug);
+
+        if ($framework['is_for_plugins'])
+        {
+            $plugins_index = array();
+            $plugins_count = - 1;
+            if (file_exists($plugins_dir . '/' . $slug . '.php'))
+            {
+                require_once $plugins_dir . '/' . $slug . '.php';
+                $plugins_count = count($plugins_index);
+            }
+
+            if (isset($framework_plugins_and_themes['plugins']) &&
+                is_array($framework_plugins_and_themes['plugins'])
+            )
+            {
+                // Union arrays.
+                $plugins_index = $plugins_index + $framework_plugins_and_themes['plugins']['slugs'];
+
+                // Exclude the framework itself.
+                $key = array_search($slug, $plugins_index);
+                if (false !== $key)
+                    array_splice($plugins_index, $key, 1);
+            }
+
+            if ($plugins_count !== count($plugins_index))
+            {
+                // Create index file only if not existed or if there are
+                // new items added to the array.
+                dump_var_to_php_file(
+                    $plugins_index,
+                    '$plugins_index',
+                    $plugins_dir . '/' . $slug . '.php',
+                    true
+                );
+            }
+        }
+
+        if ($framework['is_for_themes'])
+        {
+            $themes_index = array();
+            $themes_count = - 1;
+            if (file_exists($themes_dir . '/' . $slug . '.php'))
+            {
+                require_once $themes_dir . '/' . $slug . '.php';
+                $themes_count = count($themes_index);
+            }
+
+            if (isset($framework_plugins_and_themes['themes']) &&
+                is_array($framework_plugins_and_themes['themes'])
+            )
+            {
+                // Union arrays.
+                $themes_index = $themes_index + $framework_plugins_and_themes['themes']['slugs'];
+            }
+
+            if ($themes_count !== count($themes_index))
+            {
+                // Create index file only if not existed or if there are
+                // new items added to the array.
+                dump_var_to_php_file(
+                    $themes_index,
+                    '$themes_index',
+                    $themes_dir . '/' . $slug . '.php',
+                    true
+                );
+            }
+        }
+    }
