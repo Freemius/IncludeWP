@@ -88,9 +88,11 @@
 
 <?php require dirname(__DIR__) . '/templates/cover.php' ?>
 
-<?php require dirname(__DIR__) . '/templates/filters.php' ?>
-
+<?php if ( ! empty($framework_slug)) : ?>
+    <?php require dirname(__DIR__) . '/templates/framework.php' ?>
+<?php else : ?>
     <?php require dirname(__DIR__) . '/templates/frameworks.php' ?>
+<?php endif ?>
 
 <?php require dirname(__DIR__) . '/templates/footer.php' ?>
 
