@@ -1,5 +1,8 @@
+@import "variables";
 @import "mixins";
+@import "color";
 @import "colors";
+@import "grid";
 @import "nav";
 @import "cover";
 @import "framework";
@@ -20,7 +23,12 @@ a:not(.btn):hover {
     font-family: 'Pacifico', cursive;
 }
 
-@media only screen and (max-width: 992px) {
+.includewp-tweet {
+    border: 2px solid $twitter_color;
+    padding: 1rem 1rem 0 1rem;
+    margin-top: 1.5rem;
+}
+/* @media only screen and (max-width: 992px) {
     .small-right {
         float: right !important;
         left: auto !important;
@@ -37,7 +45,7 @@ a:not(.btn):hover {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
-}
+} */
 
 //right: 0.5rem;
 //padding: 0;
