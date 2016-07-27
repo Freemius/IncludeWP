@@ -8,7 +8,7 @@
         'is_for_plugins' => false,
         'is_for_themes'  => true,
         'thumbprint'     => array(
-            'file'  => 'nebula.php',
+            'file'  => 'functions.php',
             'token' => 'class Nebula',
         ),
     );
