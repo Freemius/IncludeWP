@@ -14,7 +14,7 @@ as a `<name>.php` in the `src/frameworks` folder.
 
 Make sure to follow the following rules:
 
-*   **GPL Competible License:** The framework must be license with a [GPL competible license](https://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses) so plugins and themes that use it can be listed on WordPress.org.
+*   **GPL Competible License:** The framework must be licensed with a [GPL competible license](https://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses) so plugins and themes that use it can be listed on WordPress.org.
 *   **GitHub:** The framework must have a public repository on GitHub that we can link to and pull in stats from.
 *   **Stick to the format:** Fill out all the same fields as the other frameworks in `src/frameworks`.
 *   **WordPress.org (optional):** If the framework is listed as a plugin on wp.org, please add a reference to the plugin's slug.
