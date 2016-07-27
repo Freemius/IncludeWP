@@ -1,6 +1,6 @@
 <?php
     $framework = array(
-        'name'           => 'TGM',
+        'name'           => 'TGMPA',
         'full_name'      => 'TGM Plugin Activation',
         'description'    => 'Easy way to require and recommend plugins.',
         'github_repo'    => 'TGMPA/TGM-Plugin-Activation',
