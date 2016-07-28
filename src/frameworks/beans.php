@@ -1,7 +1,7 @@
 <?php
     $framework = array(
         'name'           => 'Beans',
-        'description'    => 'Beans is an incredibly powerful and flexible WordPress theme, yet light weight and unbelievably fast. The magic is under the hood!.',
+        'description'    => 'Beans is a light weight theme framework which support SEO Friendly, built in a lot of front-end libraries and easy to extend.',
         'github_repo'    => 'Getbeans/Beans',
         'homepage'       => 'http://www.getbeans.io/',
         'is_for_plugins' => false,
