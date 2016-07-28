@@ -2,7 +2,7 @@
 $framework = array(
     'name'           => 'Meta Box',
     'full_name'      => 'Meta Box',
-    'description'    => 'A framework for developers to handle custom meta boxes and custom fields.',
+    'description'    => 'A custom meta boxes and custom fields toolset.',
     'github_repo'    => 'rilwis/meta-box',
     'wp_slug'        => 'meta-box',
     'homepage'       => 'https://metabox.io',
