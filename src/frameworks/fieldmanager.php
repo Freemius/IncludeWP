@@ -2,7 +2,7 @@
 	$framework = array(
 		'name'           => 'Fieldmanager',
 		'full_name'      => 'Fieldmanager',
-		'description'    => 'Custom field types for WordPress',
+		'description'    => 'Toolkit for custom field types.',
 		'github_repo'    => 'alleyinteractive/wordpress-fieldmanager',
 		'homepage'       => 'http://fieldmanager.org/',
 		'is_for_plugins' => true,
