@@ -19,7 +19,7 @@ Make sure to follow the following rules:
 *   **Stick to the format:** Fill out all the same fields as the other frameworks in `src/frameworks`.
 *   **WordPress.org (optional):** If the framework is listed as a plugin on wp.org, please add a reference to the plugin's slug.
 *   **Short description:** Keep the description for the overview page short and sweet. No need to mention it's a "framework" or adding "WordPress" in it. Please keep it informative, it's not a sales pitch :)
-*   **Thumbprint:** If you want the framework to automatically list all plugins & themes from WordPress.org that are using it, you need to provide a unique combination of a file name and a string, that we'll use for the identification. If you are adding a starter theme, make sure that the thumbprint is not changed when implementing the theme.
+*   **Thumbprint:** If you want the framework to automatically list all plugins & themes from WordPress.org that are using it, you need to provide a unique combination of a file name and a string, which we'll use for identification. If you are adding a starter theme, make sure that the thumbprint is not changed when implementing the theme.
 
 ## Running locally
 
