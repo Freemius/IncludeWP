@@ -2,7 +2,7 @@
 $framework = array(
 	'name'           => 'Unyson',
 	'full_name'      => 'Unyson Framework',
-	'description'    => 'Drag & Drop Page Builder, Options, Extensions and More',
+	'description'    => 'Drag & drop page builder, options, customizer, extensions and more.',
 	'github_repo'    => 'ThemeFuse/Unyson',
 	'wp_slug'        => 'unyson',
 	'homepage'       => 'http://unyson.io/',
