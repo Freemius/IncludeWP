@@ -14,7 +14,7 @@
   'slug' => 'piklist',
   'github' => 
   array (
-    'stars' => 19,
+    'stars' => 20,
     'forks' => 5,
     'issues' => 2,
   ),
@@ -24,7 +24,7 @@
     'short_description' => 'Piklist is the most powerful framework available for WordPress.
 Easy for beginners... built for developers. Piklist helps you build things - fast.',
     'homepage' => 'http://piklist.com',
-    'downloads' => 91297,
+    'downloads' => 92098,
     'active' => 10000,
     'avg_rate' => '4.80',
     'votes' => 71,

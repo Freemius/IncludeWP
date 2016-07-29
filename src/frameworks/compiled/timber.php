@@ -14,16 +14,16 @@
   'slug' => 'timber',
   'github' => 
   array (
-    'stars' => 2709,
+    'stars' => 2724,
     'forks' => 246,
-    'issues' => 90,
+    'issues' => 93,
   ),
   'wordpress' => 
   array (
     'name' => 'Timber',
     'short_description' => 'Helps you create themes faster with sustainable code. With Timber, you write HTML using Mustache-like Templates <a href="http://timber.upstatement.com" rel="nofollow">http://timber.upstatement.com</a>',
     'homepage' => 'http://timber.upstatement.com',
-    'downloads' => 100534,
+    'downloads' => 103818,
     'active' => 10000,
     'avg_rate' => '5.00',
     'votes' => 37,

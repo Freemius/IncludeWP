@@ -13,9 +13,9 @@
   'slug' => 'herbert',
   'github' => 
   array (
-    'stars' => 508,
+    'stars' => 520,
     'forks' => 71,
-    'issues' => 64,
+    'issues' => 66,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/c4/29/Uc2XBeRc4pouXsh8.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/05/55/QhjjOIrpU5W6Hj5K.png',
 );

@@ -14,16 +14,16 @@
   'slug' => 'kirki',
   'github' => 
   array (
-    'stars' => 586,
-    'forks' => 143,
-    'issues' => 62,
+    'stars' => 592,
+    'forks' => 145,
+    'issues' => 66,
   ),
   'wordpress' => 
   array (
     'name' => 'Kirki',
     'short_description' => 'The ultimate toolkit for theme developers using the WordPress Customizer',
     'homepage' => 'http://kirki.org',
-    'downloads' => 79303,
+    'downloads' => 83170,
     'active' => 10000,
     'avg_rate' => '5.00',
     'votes' => 31,

@@ -92,4 +92,5 @@
    'woo-fiscalita-italiana',
    'st-members-list',
    'st-members-list',
+   'st-members-list',
 );

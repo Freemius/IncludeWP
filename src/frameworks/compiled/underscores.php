@@ -13,9 +13,9 @@
   'slug' => 'underscores',
   'github' => 
   array (
-    'stars' => 6617,
-    'forks' => 2251,
-    'issues' => 28,
+    'stars' => 6655,
+    'forks' => 2255,
+    'issues' => 29,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/de/fc/OnebDTroLpM6QXkc.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/27/a2/GOFYu8SXmwQ8toOM.png',
 );

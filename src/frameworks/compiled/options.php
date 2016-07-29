@@ -24,7 +24,7 @@
     'name' => 'Options Framework',
     'short_description' => 'A framework for building theme options.',
     'homepage' => 'http://wptheming.com',
-    'downloads' => 1279333,
+    'downloads' => 1281618,
     'active' => 100000,
     'avg_rate' => '4.80',
     'votes' => 24,

@@ -13,9 +13,9 @@
   'slug' => 'odin',
   'github' => 
   array (
-    'stars' => 328,
-    'forks' => 169,
-    'issues' => 20,
+    'stars' => 337,
+    'forks' => 168,
+    'issues' => 21,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/a2/ff/d2dLNocb2jQuCOP6.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/b7/a3/E8VV58oP45WthpQ2.png',
 );

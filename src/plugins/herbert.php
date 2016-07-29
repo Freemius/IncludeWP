@@ -69,4 +69,5 @@
    'contact-form-7-getresponse-extension',
    'wpide',
    'awesome-photo-gallery',
+   'awesome-photo-gallery',
 );

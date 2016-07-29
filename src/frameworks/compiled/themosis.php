@@ -14,9 +14,9 @@
   'slug' => 'themosis',
   'github' => 
   array (
-    'stars' => 336,
+    'stars' => 339,
     'forks' => 57,
     'issues' => 44,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/07/43/0PqRLG0ysilUFA3o.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/77/8d/eShipKpMsFPwal03.png',
 );

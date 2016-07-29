@@ -34,4 +34,5 @@
    'bpmcontext-contact-plus',
    'wp-smart-export',
    'wp-to-twitter',
+   'wp-to-twitter',
 );
