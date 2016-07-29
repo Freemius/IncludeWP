@@ -13,9 +13,9 @@
   'slug' => 'freemius',
   'github' => 
   array (
-    'stars' => 24,
-    'forks' => 15,
-    'issues' => 27,
+    'stars' => 23,
+    'forks' => 14,
+    'issues' => 23,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/b6/c9/VLjhsnIVOPb2LryV.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/b2/6b/lCpJ1w9zi9FsDJzX.png',
 );

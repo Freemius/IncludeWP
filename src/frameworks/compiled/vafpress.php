@@ -14,9 +14,9 @@
   'slug' => 'vafpress',
   'github' => 
   array (
-    'stars' => 197,
+    'stars' => 196,
     'forks' => 87,
     'issues' => 64,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/1d/b8/Pl4OuekZS56sCfVe.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/f4/65/YmINvIlctwQHCGh2.png',
 );

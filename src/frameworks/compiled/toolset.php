@@ -14,7 +14,7 @@
   'slug' => 'toolset',
   'github' => 
   array (
-    'stars' => 1,
+    'stars' => 0,
     'forks' => 1,
     'issues' => 0,
   ),
@@ -23,7 +23,7 @@
     'name' => 'Toolset Types',
     'short_description' => 'The complete and reliable plugin for managing custom post types, custom taxonomies and custom fields.',
     'homepage' => 'http://wordpress.org/extend/plugins/types/',
-    'downloads' => 1920680,
+    'downloads' => 1909858,
     'active' => 200000,
     'avg_rate' => '4.30',
     'votes' => 172,

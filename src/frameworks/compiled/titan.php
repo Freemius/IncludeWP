@@ -15,16 +15,16 @@
   'slug' => 'titan',
   'github' => 
   array (
-    'stars' => 255,
-    'forks' => 113,
-    'issues' => 98,
+    'stars' => 253,
+    'forks' => 112,
+    'issues' => 106,
   ),
   'wordpress' => 
   array (
     'name' => 'Titan Framework',
     'short_description' => 'The most easy to use WordPress option framework.',
     'homepage' => 'http://www.titanframework.net/',
-    'downloads' => 30773,
+    'downloads' => 30482,
     'active' => 7000,
     'avg_rate' => '4.50',
     'votes' => 20,

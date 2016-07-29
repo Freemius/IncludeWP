@@ -14,9 +14,9 @@
   'slug' => 'boilerplate',
   'github' => 
   array (
-    'stars' => 3817,
-    'forks' => 984,
-    'issues' => 41,
+    'stars' => 3800,
+    'forks' => 981,
+    'issues' => 40,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/20/83/t0tj0MKsXdoFHUeE.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/4e/4b/YAmEky4d1sbcTcTq.png',
 );

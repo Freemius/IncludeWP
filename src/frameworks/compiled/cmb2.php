@@ -15,19 +15,19 @@
   'slug' => 'cmb2',
   'github' => 
   array (
-    'stars' => 1263,
-    'forks' => 320,
-    'issues' => 210,
+    'stars' => 1244,
+    'forks' => 319,
+    'issues' => 222,
   ),
   'wordpress' => 
   array (
     'name' => 'CMB2',
     'short_description' => 'CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.',
     'homepage' => 'https://github.com/WebDevStudios/CMB2',
-    'downloads' => 137165,
+    'downloads' => 130778,
     'active' => 40000,
     'avg_rate' => '4.90',
-    'votes' => 46,
+    'votes' => 45,
   ),
   'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/cmb2/assets/banner-772x250.png?rev=1081087',
 );

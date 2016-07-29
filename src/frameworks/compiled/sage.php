@@ -13,9 +13,9 @@
   'slug' => 'sage',
   'github' => 
   array (
-    'stars' => 7449,
-    'forks' => 2509,
-    'issues' => 8,
+    'stars' => 7399,
+    'forks' => 2498,
+    'issues' => 13,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/78/61/4s41PmHBzlJIEii0.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/ba/e3/ZqfDflc1NgXXZ49Q.png',
 );

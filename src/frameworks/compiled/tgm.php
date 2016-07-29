@@ -14,9 +14,9 @@
   'slug' => 'tgm',
   'github' => 
   array (
-    'stars' => 1172,
-    'forks' => 344,
-    'issues' => 60,
+    'stars' => 1169,
+    'forks' => 343,
+    'issues' => 58,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/5f/52/zFbm1ns2WWyXxfYA.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/11/33/i28cHAaNRkqaI29r.png',
 );

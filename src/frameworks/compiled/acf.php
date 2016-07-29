@@ -15,19 +15,19 @@
   'slug' => 'acf',
   'github' => 
   array (
-    'stars' => 1223,
+    'stars' => 1216,
     'forks' => 321,
-    'issues' => 289,
+    'issues' => 290,
   ),
   'wordpress' => 
   array (
     'name' => 'Advanced Custom Fields',
     'short_description' => 'Customise WordPress with powerful, professional and intuitive fields',
     'homepage' => 'http://www.advancedcustomfields.com/',
-    'downloads' => 5641073,
+    'downloads' => 5560850,
     'active' => 1000000,
     'avg_rate' => '4.90',
-    'votes' => 872,
+    'votes' => 867,
   ),
   'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/advanced-custom-fields/assets/banner-772x250.png?rev=1082746',
 );

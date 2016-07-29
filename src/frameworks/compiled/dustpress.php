@@ -13,9 +13,9 @@
   'slug' => 'dustpress',
   'github' => 
   array (
-    'stars' => 14,
+    'stars' => 11,
     'forks' => 1,
     'issues' => 1,
   ),
-  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/4f/c5/fjyFuYV2LYzXNhDZ.png',
+  'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://api.page2images.com/ccimages/69/20/4GUwBehLJcNJRcsS.png',
 );
