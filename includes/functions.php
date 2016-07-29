@@ -42,7 +42,10 @@
      */
     function enrich_with_github(&$framework)
     {
-        console_log($framework['slug'] . ' - Fetching details from GitHub API.');
+        console_log(
+	        (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug'])
+	        . ' - Fetching details from GitHub API.'
+        );
 
         // Fetch details from GitHub API.
         $github_repo_json = get_content_from_github('https://api.github.com/repos/' . $framework['github_repo'] . '?access_token=' . GITHUB_ACCESS_TOKEN);
@@ -77,7 +80,10 @@
             {
                 // Probably blocked by .org.
                 $sleep = rand(10, 30);
-                console_log($framework['slug'] . " - Request failed, going to sleep for {$sleep} sec (retry " . (4 - $retries) . ")");
+                console_log(
+	                (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug'])
+	                . " - Request failed, going to sleep for {$sleep} sec (retry " . (4 - $retries) . ")"
+                );
                 sleep($sleep);
                 $retries --;
             }
@@ -166,7 +172,10 @@
     {
         if (isset($framework['homepage']))
         {
-            console_log($framework['slug'] . ' - Enriching banner with homepage screenshot.');
+            console_log(
+	            (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug'])
+	            . ' - Enriching banner with homepage screenshot.'
+            );
 
             $http_homepage = urlencode(str_replace('https://', 'http://', $framework['homepage']));
 
@@ -197,7 +206,10 @@
         }
         else
         {
-            console_log($framework['slug'] . ' - Enriching banner with random tech image.');
+            console_log(
+	            (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug'])
+	            . ' - Enriching banner with random tech image.'
+            );
 
             // Use generic placeholder.
             $framework['banner'] = 'https://placeimg.com/518/168/tech';
@@ -265,7 +277,7 @@
      */
     function dump_framework_items($framework, $plugins_dir, $themes_dir)
     {
-        $slug = $framework['slug'];
+        $slug = (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug']);
 
         $framework_plugins_and_themes = get_framework_items($slug);
 
