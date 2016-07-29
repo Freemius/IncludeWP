@@ -95,22 +95,6 @@
     'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/go-fetch-jobs-wp-job-manager/assets/banner-772x250.png?rev=1344230',
     'last_update' => 1468990109,
   ),
-  'go-fetch-jobs-jobengine' => 
-  array (
-    'wp_slug' => 'go-fetch-jobs-jobengine',
-    'wordpress' => 
-    array (
-      'name' => 'Go Fetch Jobs (for JobEngine)',
-      'short_description' => 'Instantly populate your JobEngine database using RSS job feeds from the most popular job sites.',
-      'homepage' => 'http://bruno-carreco.com/wpuno/demo/wp/go-fetch-jobs-jobengine/?demo=1',
-      'downloads' => 153,
-      'active' => 0,
-      'avg_rate' => '0.00',
-      'votes' => 0,
-    ),
-    'banner' => 'https://res.cloudinary.com/freemius/image/fetch/http://ps.w.org/go-fetch-jobs-jobengine/assets/banner-772x250.png?rev=1371634',
-    'last_update' => 1468990109,
-  ),
   'sprout-invoices' => 
   array (
     'wp_slug' => 'sprout-invoices',

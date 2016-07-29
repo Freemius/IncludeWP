@@ -5,7 +5,6 @@
    'chamber-dashboard-business-directory',
    'mobile-menu',
    'go-fetch-jobs-wp-job-manager',
-   'go-fetch-jobs-jobengine',
    'sprout-invoices',
    'wordapp-mobile-app',
    'tinymce-annotate',
