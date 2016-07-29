@@ -166,7 +166,10 @@
     {
         if (isset($framework['homepage']))
         {
-            console_log($framework['slug'] . ' - Enriching banner with homepage screenshot.');
+            console_log(
+	            (isset($framework['slug']) ? $framework['slug'] : $framework['wp_slug'])
+	            . ' - Enriching banner with homepage screenshot.'
+            );
 
             $http_homepage = urlencode(str_replace('https://', 'http://', $framework['homepage']));
 
