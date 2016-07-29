@@ -100,5 +100,4 @@
    'demomentsomtres-woocommerce-minimum-purchase-message',
    'seo-monitor',
    'sportspress-for-golf',
-   'sportspress-for-golf',
 );
