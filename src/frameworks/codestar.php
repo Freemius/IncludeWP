@@ -2,7 +2,7 @@
     $framework = array(
         'name'           => 'Codestar',
         'full_name'      => 'Codestar Framework',
-        'description'    => 'A 5 in 1, LIGHTweight, THEME & PLUGIN Options Framework',
+        'description'    => 'A 5 in 1, Easy to Customize, LIGHTweight, THEME & PLUGIN Options Framework',
         'github_repo'    => 'Codestar/codestar-framework',
         'wp_slug'        => '',
         'homepage'       => 'http://codestarframework.com/',
