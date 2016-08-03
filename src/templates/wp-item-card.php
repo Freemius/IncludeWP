@@ -6,7 +6,7 @@
     <div class="card small">
         <div class="card-image">
             <div class="image-container">
-                <img src="<?php echo $item['banner'] ?>">
+                <img data-src="<?php echo $item['banner'] ?>" src="/assets/img/blank.gif" class="lazy">
             </div>
             <span class="card-title"><?php echo $item['wordpress']['name'] ?></span>
 
