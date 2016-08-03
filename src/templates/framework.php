@@ -34,12 +34,22 @@
         number_format($total_active) . '+ active installs' :
         number_format($total_downloads) . ' downloads';
 
-
-    //    #Freemius framework is used by 38 #plugins on #WordPress.org & 54 #themes with 2,000,000 downloads.
-    $tweet = $framework['name'] . ' framework is used by ' .
-             ($plugins_count > 0 ? number_format($plugins_count) . ' #plugins' : '') .
-             ($themes_count > 0 ? ($plugins_count > 0 ? ' & ' : '') . number_format($themes_count) . ' #themes' : '') .
-             ' on #WordPress.org with ' . $counter . '.';
+    if ($total_active > 100000)
+    {
+        //    #Freemius framework powers 2,000,000+ websites a/ used by 38 #plugins on #WordPress.org.
+        $tweet = $framework['name'] . ' framework powers ' . number_format($total_active) . '+ websites and is used by ' .
+                 ($plugins_count > 0 ? number_format($plugins_count) . ' #plugins' : '') .
+                 ($themes_count > 0 ? ($plugins_count > 0 ? ' & ' : '') . number_format($themes_count) . ' #themes' : '') .
+                 ' on #WordPress.org.';
+    }
+    else
+    {
+        //    #Freemius framework is used by 38 #plugins on #WordPress.org & 54 #themes with 2,000,000 downloads.
+        $tweet = $framework['name'] . ' framework is used by ' .
+                 ($plugins_count > 0 ? number_format($plugins_count) . ' #plugins' : '') .
+                 ($themes_count > 0 ? ($plugins_count > 0 ? ' & ' : '') . number_format($themes_count) . ' #themes' : '') .
+                 ' on #WordPress.org with ' . $counter . '.';
+    }
 
     $is_empty_result = (0 === ($plugins_count + $themes_count));
 ?>
