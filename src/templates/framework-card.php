@@ -10,7 +10,7 @@
                 </div>
             </a>
             <span class="card-title"><a
-                    href="/<?php echo $framework['slug'] ?>/#focus"><?php echo $framework['name'] ?></a></span>
+                    href="/<?php echo $framework['slug'] ?>/#focus"><?php echo $framework['name'] ?> <i class="fa fa-angle-double-right"></i></a></span>
             <!--            <span class="card-title"><a href="/--><?php //echo $framework['slug'] ?><!--/">-->
             <?php //echo $framework['name'] ?><!--</a></span>-->
 
