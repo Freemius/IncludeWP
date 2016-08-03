@@ -2,11 +2,12 @@
     require_once dirname(__DIR__) . '/includes/config.php';
     require_once dirname(__DIR__) . '/includes/functions.php';
 
-    if (false)
-    {
-        #region Frameworks update
+    $framework_files = glob(dirname(__DIR__) . '/src/frameworks/*.php');
 
-        $framework_files        = glob(dirname(__DIR__) . '/src/frameworks/*.php');
+    if (true)
+    {
+        #region Frameworks update -----------------------------------------------------------
+
         $framework_files_output = dirname(__DIR__) . '/src/frameworks/compiled/';
         $plugins_dir            = dirname(__DIR__) . '/src/plugins/';
         $themes_dir             = dirname(__DIR__) . '/src/themes/';
@@ -18,6 +19,8 @@
 
         if (file_exists($updates_index_path))
             require_once $updates_index_path;
+
+        $is_updated = false;
 
         foreach ($framework_files as $key => $file)
         {
@@ -72,11 +75,14 @@
                 // Fetch framework's themes and plugin slugs.
                 dump_framework_items($framework, $plugins_dir, $themes_dir);
 
+                $is_updated = true;
             }
 
             $frameworks_index[$slug] = $framework['github']['stars'];
         }
 
+        if ($is_updated)
+        {
         // Sort frameworks by stars.
         arsort($frameworks_index);
 
@@ -85,8 +91,9 @@
 
         // Dump framework update timestamp.
         dump_var_to_php_file($frameworks_updates, '$frameworks_updates', $updates_index_path);
+        }
 
-        #endregion Frameworks update
+        #endregion Frameworks update -----------------------------------------------------------
     }
 
     if (true)
