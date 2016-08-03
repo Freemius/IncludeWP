@@ -9,6 +9,6 @@
         'is_for_themes'  => true,
         'thumbprint'     => array(
             'file'  => 'functions.php',
-            'token' => 'class Nebula',
+            'token' => 'nebula_utilities',
         ),
     );
