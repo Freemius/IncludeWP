@@ -1,7 +1,7 @@
 <?php
     $framework = array(
         'name'           => 'CMB2',
-        'full_name'      => 'Custom Metaboxes 2',
+        'full_name'      => 'CMB2',
         'description'    => 'Toolkit for building metaboxes, custom fields, and forms.',
         'github_repo'    => 'WebDevStudios/CMB2',
         'wp_slug'        => 'cmb2',
