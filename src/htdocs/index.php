@@ -1,4 +1,6 @@
 <?php
+    require_once dirname(dirname(__DIR__)) . '/includes/config.php';
+
     define('NAME', 'IncludeWP');
     define('SITE_ADDRESS', 'https://includewp.com');
 
@@ -84,17 +86,17 @@
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
-<?php require dirname(__DIR__) . '/templates/header.php' ?>
+<?php require_once TEMPLATES_DIR . 'header.php' ?>
 
-<?php require dirname(__DIR__) . '/templates/cover.php' ?>
+<?php require_once TEMPLATES_DIR . 'cover.php' ?>
 
 <?php if ( ! empty($framework_slug)) : ?>
-    <?php require dirname(__DIR__) . '/templates/framework.php' ?>
+    <?php require_once TEMPLATES_DIR . 'framework.php' ?>
 <?php else : ?>
-    <?php require dirname(__DIR__) . '/templates/frameworks.php' ?>
+    <?php require_once TEMPLATES_DIR . 'frameworks.php' ?>
 <?php endif ?>
 
-<?php require dirname(__DIR__) . '/templates/footer.php' ?>
+<?php require_once TEMPLATES_DIR . 'footer.php' ?>
 
 </body>
 </html>
