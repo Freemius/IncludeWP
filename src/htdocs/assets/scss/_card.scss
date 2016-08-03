@@ -27,9 +27,14 @@
             max-width: 90%;
 
             a {
-                color: #fff;
+                color: #73D1FF;
                 -webkit-font-smoothing: antialiased;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            }
+
+            i.fa {
+                font-weight: bold;
+                margin-left: 5px;
             }
         }
     }
