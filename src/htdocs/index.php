@@ -66,8 +66,14 @@
     <meta name="twitter:image:src" content="<?php echo SITE_ADDRESS ?>/assets/img/og-includewp.png">
 
     <!--    <link rel="canonical" href="--><?php //echo $canonical; ?><!--" />-->
+
+    <?php require_once TEMPLATES_DIR . 'fb-pixel.php' ?>
+
+    <?php require_once TEMPLATES_DIR . 'twitter-tag.php' ?>
 </head>
 <body>
+<?php require_once TEMPLATES_DIR . 'ga.php' ?>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <!-- Font Awesome -->
