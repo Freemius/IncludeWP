@@ -119,5 +119,8 @@
 <?php endif ?>
 
 <script type="text/javascript">
-    sortItems('installs');
+    sortItems(
+        'installs',
+        $('#sortby li:first-of-type a').html().replace('Sort', 'Sorted')
+    );
 </script>

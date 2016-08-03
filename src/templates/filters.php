@@ -59,7 +59,7 @@
             </div>
 
             <script type="text/javascript">
-                var sortItems = function (sortBy) {
+                var sortItems = function (sortBy, label) {
                     var $cards = $('.card-container');
 
                     $cards.sort(function (a, b) {
@@ -82,11 +82,14 @@
 
                     $cards.detach().appendTo($('#frameworks > .container'));
 
-                    $('#sortby_trigger').html($(this).html().replace('Sort', 'Sorted'))
+                    $('#sortby_trigger').html(label)
                 };
 
                 $('#sortby a').on('click', function () {
-                    sortItems($(this).attr('data-sort'));
+                    sortItems(
+                        $(this).attr('data-sort'),
+                        $(this).html().replace('Sort', 'Sorted')
+                    );
                 });
 
                 $('#show_plugins').change(function () {
