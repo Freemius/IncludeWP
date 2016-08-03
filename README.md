@@ -14,6 +14,7 @@ as a `<name>.php` in the `src/frameworks` folder.
 
 Make sure to follow the following rules:
 
+*   **Frameworks only:** We only accept projects (frameworks, libs, SDKs) that other theme and plugin developers can **include** into their theme or plugin. One exception - we also accept starter themes and plugin boilerplates.
 *   **GPL Compatible License:** The framework must be licensed with a [GPL compatible license](https://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses) so plugins and themes that use it can be listed on WordPress.org.
 *   **GitHub:** The framework must have a public repository on GitHub that we can link to and pull in stats from.
 *   **Stick to the format:** Fill out all the same fields as the other frameworks in `src/frameworks`.
