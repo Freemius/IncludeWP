@@ -3,7 +3,7 @@
     <div class="container">
         <a href="/" class="logo"><h1><i class="fa fa-terminal"></i> IncludeWP</h1></a>
 
-        <h2>Top Open-Source Frameworks for WordPress Plugin & Theme Developers</h2>
+        <h2>Top Open-Source Frameworks for <br>WordPress Plugin & Theme Developers</h2>
 
         <p class="powered-by">Powered with <b>❤</b> by <b><a
                     href="https://freemius.com?utm_source=includewp_home&utm_medium=link&utm_content=header&utm_campaign=includewp">Freemius</a></b>
