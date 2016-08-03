@@ -2,3 +2,4 @@ src/themes/compiled/**
 src/frameworks/compiled/**
 src/plugins/compiled/**
 sitemap.xml
+.idea
