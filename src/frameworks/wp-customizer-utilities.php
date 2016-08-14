@@ -1,8 +1,7 @@
 <?php
     $framework = array(
         'name'           => 'WP Customizer Utilities',
-        'full_name'      => 'WP Customizer Utilities by ProteusThemes',
-        'description'    => 'WordPress customizer controls and settings for faster and better customizer experience. Loaded with Composer.',
+        'description'    => 'Customizer controls and settings for faster customizer experience.',
         'github_repo'    => 'proteusthemes/wp-customizer-utilities',
         'homepage'       => 'https://github.com/proteusthemes/wp-customizer-utilities',
         'is_for_plugins' => false,
