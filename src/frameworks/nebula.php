@@ -3,7 +3,6 @@
         'name'           => 'Nebula',
         'description'    => 'Advanced Starter theme.',
         'github_repo'    => 'chrisblakley/Nebula',
-        'wp_slug'        => 'Nebula',
         'homepage'       => 'https://gearside.com/nebula',
         'is_for_plugins' => false,
         'is_for_themes'  => true,
