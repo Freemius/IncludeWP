@@ -2,7 +2,7 @@
     $framework = array(
         'name'           => 'Boots',
         'full_name'      => 'Boots for Wordpress',
-        'description'    => 'Modular, extendable, composer powered. The missing framework for developing plugins and themes.',
+        'description'    => 'Modular, extendable, composer powered plugin & theme framework.',
         'github_repo'    => 'wpboots/boots',
         'wp_slug'        => '',
         'homepage'       => 'http://wpboots.com/',
