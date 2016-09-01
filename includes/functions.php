@@ -221,6 +221,9 @@
         if (file_exists($dest))
             unlink($dest);
 
+        if (!file_exists(dirname($dest)))
+            mkdir(dirname($dest));
+
         $export = var_export($variable, true);
 
         if ($strip_keys)
