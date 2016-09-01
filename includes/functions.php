@@ -176,6 +176,8 @@
 
             do
             {
+                console_log($framework['slug'] . ' - Fetching homepage screenshot.');
+
                 // Fetch screenshot.
                 $result = file_get_contents($screenshot_fetch_url);
 
@@ -183,6 +185,8 @@
 
                 if ('processing' === $result['status'])
                 {
+                    console_log($framework['slug'] . ' - Still processing, going to sleep for ' . $result['estimated_need_time'] . 's.');
+
                     // Wait till screenshot generated.
                     sleep($result['estimated_need_time']);
                 }
