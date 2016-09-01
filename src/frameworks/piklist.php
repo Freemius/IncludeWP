@@ -8,7 +8,7 @@
         'is_for_plugins' => true,
         'is_for_themes'  => true,
         'thumbprint'     => array(
-            'file'  => 'class-piklist.php',
-            'token' => 'class PikList',
+            'file'  => 'class-piklist-checker.php',
+            'token' => 'class Piklist_Checker',
         ),
     );
