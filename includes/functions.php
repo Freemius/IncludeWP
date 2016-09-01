@@ -284,7 +284,7 @@
             )
             {
                 // Union arrays.
-                $plugins_index = $plugins_index + $framework_plugins_and_themes['plugins']['slugs'];
+                $plugins_index = array_unique(array_merge($plugins_index, $framework_plugins_and_themes['plugins']['slugs']));
 
                 // Exclude the framework itself.
                 $key = array_search($slug, $plugins_index);
@@ -320,7 +320,7 @@
             )
             {
                 // Union arrays.
-                $themes_index = $themes_index + $framework_plugins_and_themes['themes']['slugs'];
+                $themes_index = array_unique(array_merge($themes_index, $framework_plugins_and_themes['themes']['slugs']));
             }
 
             if ($themes_count !== count($themes_index))
