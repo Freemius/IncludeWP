@@ -18,6 +18,7 @@
    'dooodl',
    'blackbaud-sphere',
    'wpmovielibrary',
+   'wp-image-hover-lite',
    'mg-post-contributors',
    'wpbizplugins-easy-admin-quick-menu',
    'recipepress-reloaded',

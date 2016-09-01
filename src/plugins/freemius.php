@@ -5,10 +5,10 @@
    'chamber-dashboard-business-directory',
    'mobile-menu',
    'go-fetch-jobs-wp-job-manager',
-   'go-fetch-jobs-jobengine',
    'sprout-invoices',
    'wordapp-mobile-app',
    'tinymce-annotate',
+   'freemage',
    'cf7-customizer',
    'rating-widget',
    'linkedin-login',
@@ -35,4 +35,5 @@
    'bpmcontext-contact-plus',
    'wp-smart-export',
    'wp-to-twitter',
+   'buffer-my-post',
 );

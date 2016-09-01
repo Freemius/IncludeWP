@@ -12,6 +12,7 @@
    'minamaze',
    'verge',
    'newsmag',
+   'experon',
    'studio-x',
    'cv-card',
    'veal',
@@ -23,4 +24,5 @@
    'virtue',
    'evolve',
    'ih-photographer',
+   'flower',
 );

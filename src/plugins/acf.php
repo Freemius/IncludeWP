@@ -1,5 +1,6 @@
 <?php $plugins_index = array (
    'wpbizplugins-custom-admin-help-boxes',
+   'wp-related-items',
    'wpbizplugins-marketers-toolbox',
    'cta',
    'snappy-list-builder',
@@ -10,6 +11,7 @@
    'timber-library',
    'advanced-custom-fields',
    'acf-qtranslate',
+   'project-panorama-lite',
    'leads',
    'flaunt-your-clients-free',
    'wp-feature-box',

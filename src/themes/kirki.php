@@ -1,9 +1,11 @@
 <?php $themes_index = array (
    'gem',
+   'awada',
    'kyma',
    'venture-lite',
    'ornea',
    'blogrock-core',
+   'beam',
    'shamrock',
    'i-craft',
    'thewest',
@@ -12,4 +14,5 @@
    'topcat-lite',
    'infiword',
    'agama',
+   'safreen',
 );

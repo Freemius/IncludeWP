@@ -5,6 +5,7 @@
    'simple-behace-portfolio',
    'adblock-notify-by-bweb',
    'affiliate-pro',
+   'tr-easy-google-analytics',
    'epic-selection-sharer',
    'betteroptin',
    'titan-framework',
