@@ -10,7 +10,7 @@ Earlier this year (March 2016), the WordPress.org plugins review team issued a s
 ## Contributing
 
 Missing a framework here? Just fork the repo and add your framework
-as a `<name>.php` in the `src/frameworks` folder.
+as a `{name}.php` in the `src/frameworks` folder.
 
 Make sure to follow the following rules:
 
@@ -38,7 +38,7 @@ Before you do that, you'll need to update `includes/config.php` with your keys/t
 * [Materialize](https://materializecss.com)
 * [jQuery](https://jquery.com/)
 * [Font Awesome](https://fontawesome.io)
-* [Google Fonts] (https://www.google.com/fonts)
+* [Google Fonts](https://www.google.com/fonts)
 
 ### APIs
 * Addendio: Pulling WordPress.org plugins & themes based on a slug ([private API by Addendio](https://addendio.com/)).
