@@ -1,0 +1,13 @@
+<?php
+    $framework = array(
+        'name'           => '_child',
+        'description'    => 'WP Child Theme Boilerplate',
+        'github_repo'    => 'ahmadawais/_child',
+        'homepage'       => 'https://ahmadawais.com/_child-wordpress-child-theme-boilerplate/',
+        'is_for_plugins' => false,
+        'is_for_themes'  => true,
+        'thumbprint'     => array(
+            'file'  => 'functions.php',
+            'token' => '',
+        ),
+    );
