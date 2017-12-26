@@ -9,7 +9,7 @@ $framework = array(
 	'is_for_plugins' => true,
 	'is_for_themes'  => false,
 	'thumbprint'     => array(
-		'file'  => 'cpt-ui.php',
-		'token' => 'class CPT',
+		'file'  => 'custom-post-type-ui.php',
+		'token' => 'cptui_init()',
 	),
 );
