@@ -13,7 +13,7 @@
     $title          = 'Top Frameworks for WordPress Plugin & Theme Developers';
     $og_title       = 'IncludeWP';
     $og_url         = SITE_ADDRESS;
-    $og_description = 'IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & theme developers. Because code reusability is awesome.';
+    $og_description = 'IncludeWP is a leaderboard of the top open-source frameworks for WordPress plugin & WordPress theme developers. Because code reusability is awesome.';
     if ( ! empty($framework_slug))
     {
         include dirname(__DIR__) . '/frameworks/compiled/' . $framework_slug . '.php';
