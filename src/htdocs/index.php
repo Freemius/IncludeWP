@@ -74,6 +74,8 @@
 <body>
 <?php require_once TEMPLATES_DIR . 'ga.php' ?>
 
+<?php require_once TEMPLATES_DIR . 'adroll.html' ?>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <!-- Font Awesome -->
